@@ -6,11 +6,11 @@
   "mqttServerConnectionEnabled": true,
   "password": {
     "data": {
-      "ciphertext": "X2DuRY2d_0SqKQ",
-      "encrypted_key": "qzF6KszaufqWiNjlvKEkOsf-kppvsjGzNbTWDn4R_A3NWrv4jjJE-A",
-      "iv": "_MQznZFuHnJDpDsQ",
-      "protected": "eyJhbGciOiJBMjU2S1ciLCJlbmMiOiJBMjU2R0NNIiwiaWF0IjoxNzg2NTczMzAzLCJ6aXAiOiJERUYifQ",
-      "tag": "rWtUroLRWtTZs3Y5uSr2tw"
+      "ciphertext": "r7hJ-RKJCOfukA",
+      "encrypted_key": "XqZpZowWClsVpoLeD5VHkJr9isG3TwLd2SLvX6RGkdckERB0fpkLWQ",
+      "iv": "t-Rre7ss0_meVE0l",
+      "protected": "eyJhbGciOiJBMjU2S1ciLCJlbmMiOiJBMjU2R0NNIiwiaWF0IjoxNzg4MjIxMTgzLCJ6aXAiOiJERUYifQ",
+      "tag": "rKdLRbVdxNxbDD680Ow7Pg"
     },
     "type": "Embedded"
   },

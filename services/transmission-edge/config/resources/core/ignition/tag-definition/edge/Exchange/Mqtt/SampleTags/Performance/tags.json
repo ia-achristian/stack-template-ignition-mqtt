@@ -1,0 +1,25 @@
+[
+  {
+    "valueSource": "reference",
+    "historyMaxAge": 24,
+    "dataType": "Float8",
+    "historicalDeadband": 0.05,
+    "historyProvider": "PublicDemo",
+    "sourceTagPath": "[System]Gateway/Performance/Memory Utilization",
+    "historyEnabled": true,
+    "name": "Memory Utilization",
+    "tagType": "AtomicTag"
+  },
+  {
+    "valueSource": "reference",
+    "historyMaxAge": 24,
+    "dataType": "Float8",
+    "historicalDeadband": 0.05,
+    "historyProvider": "PublicDemo",
+    "sourceTagPath": "[System]Gateway/Performance/CPU Usage",
+    "historyEnabled": true,
+    "name": "CPU Usage",
+    "formatString": "#,##0.00#",
+    "tagType": "AtomicTag"
+  }
+]

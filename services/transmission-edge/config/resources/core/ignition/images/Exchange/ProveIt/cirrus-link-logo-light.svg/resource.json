@@ -1,0 +1,21 @@
+{
+  "scope": "A",
+  "description": "",
+  "version": 1,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "cirrus-link-logo-light.svg"
+  ],
+  "attributes": {
+    "width": 307,
+    "format": "SVG",
+    "lastModification": {
+      "actor": "admin",
+      "timestamp": "2026-02-12T14:10:12Z"
+    },
+    "size": 8162,
+    "lastModificationSignature": "1e2c759e32e91923228f5b5f38b22f1fe76e854493dc2a7521cc5edb4f7274b1",
+    "height": 48
+  }
+}

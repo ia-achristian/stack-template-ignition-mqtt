@@ -24,6 +24,8 @@ services:
       - distributor-data:/seed/${STACK_NAME}-distributor
       - engine-data:/seed/${STACK_NAME}-engine
       - transmission-data:/seed/${STACK_NAME}-transmission
+      - transmission-edge-data:/seed/${STACK_NAME}-transmission-edge
+
 
   distributor:
     <<: [*ignition-common]
@@ -118,6 +120,37 @@ services:
       gateway.useProxyForwardedHeader=true
       -Dignition.config.mode=${DEPLOYMENT_MODE:-dev}
 
+  transmission-edge:
+    <<: [*ignition-common]
+    volumes:
+      - transmission-edge-data:/usr/local/bin/ignition/data
+      - ./services/transmission-edge/projects:/usr/local/bin/ignition/data/projects
+      # Resource collections
+      - ./services/transmission-edge/config/resources/core:/usr/local/bin/ignition/data/config/resources/core
+      - ./services/transmission-edge/config/resources/dev:/usr/local/bin/ignition/data/config/resources/dev
+      # Modules
+      - ./shared/modules/MQTT-Transmission-signed-5.0.3.modl:/usr/local/bin/ignition/user-lib/modules/MQTT-transmission-signed.modl
+    environment:
+      <<: *ignition-environment
+      IGNITION_EDITION: edge
+      GATEWAY_MODULES_ENABLED: |
+        com.inductiveautomation.perspective,
+        com.inductiveautomation.opcua,
+        com.cirruslink.mqtt.transmission.gateway
+      ACCEPT_MODULE_LICENSES: com.cirruslink.mqtt.transmission.gateway
+      ACCEPT_MODULE_CERTS: com.cirruslink.mqtt.transmission.gateway
+    labels:
+      - traefik.hostname=${STACK_NAME}-transmission-edge
+      - traefik.enable=true
+    command: >
+      -n ${STACK_NAME}-transmission-edge
+      -m 2096
+      -h 80
+      -s 443
+      -a ${STACK_NAME}-transmission-edge.localtest.me
+      --
+      gateway.useProxyForwardedHeader=true
+      -Dignition.config.mode=${DEPLOYMENT_MODE:-dev}
 volumes:
   distributor-data:
     name: ${STACK_NAME}-distributor-data
@@ -125,6 +158,8 @@ volumes:
     name: ${STACK_NAME}-engine-data
   transmission-data:
     name: ${STACK_NAME}-transmission-data
+  transmission-edge-data:
+    name: ${STACK_NAME}-transmission-edge-data
 
 networks:
   proxy:

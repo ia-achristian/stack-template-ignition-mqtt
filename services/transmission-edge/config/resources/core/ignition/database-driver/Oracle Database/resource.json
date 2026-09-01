@@ -1,0 +1,13 @@
+{
+  "scope": "A",
+  "description": "The Oracle Database JDBC driver.",
+  "version": 1,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "config.json"
+  ],
+  "attributes": {
+    "uuid": "1a1cac7f-5b57-483e-92c2-90c540638143"
+  }
+}

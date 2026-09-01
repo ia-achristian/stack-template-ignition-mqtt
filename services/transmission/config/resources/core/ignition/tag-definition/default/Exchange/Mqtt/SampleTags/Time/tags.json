@@ -1,0 +1,23 @@
+[
+  {
+    "valueSource": "expr",
+    "expression": "dateExtract(now(), \"hr\")",
+    "engHigh": 23.0,
+    "name": "Hour",
+    "tagType": "AtomicTag"
+  },
+  {
+    "valueSource": "expr",
+    "expression": "dateExtract(now(), \"sec\")",
+    "engHigh": 23.0,
+    "name": "Second",
+    "tagType": "AtomicTag"
+  },
+  {
+    "valueSource": "expr",
+    "expression": "dateExtract(now(), \"min\")",
+    "engHigh": 23.0,
+    "name": "Minute",
+    "tagType": "AtomicTag"
+  }
+]

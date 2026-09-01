@@ -2,12 +2,19 @@
 
 This project template is designed as a base repository for any Ignition MQTT project. It includes a basic structure for a project to be customized and built upon. For starters, this readme should be updated with pertinent information for the project.
 
-The stack consists of three services:
+The stack consists of four services:
 
 - `distributor`: An Ignition Gateway with the CirrusLink MQTT Distributor module
 - `engine`: An Ignition Gateway with the CirrusLink MQTT Engine module, and a connection to the Distributor
 - `transmission`: An Ignition Gateway with the CirrusLink MQTT Transmission module, and a connection to the Distributor
+- `transmission-edge`: An Ignition Edge Gateway with the CirrusLink MQTT Transmission module, and a connection to the Distributor
 
+With the exception of the `distributor` service, which acts as the MQTT broker for the stack, any of the other three services can be removed without affecting other components of the stack.
+
+The password for the default MQTT user `admin` in this stack is `password` (different from the MQTT modules' default).
+
+> [!WARNING]
+> Do not use default passwords in production!
 
 ## Creating a README
 

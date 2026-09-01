@@ -1,0 +1,19 @@
+{
+  "profile": {
+    "type": "internal"
+  },
+  "settings": {
+    "secrets": {
+      "idp-client-secret": {
+        "ciphertext": {
+          "ciphertext": "vJMJbbfYeDLLzs3gRC0X8P3z70dVxOplHkCF_3i9s-Kb-g",
+          "encrypted_key": "N-jnKLyEK2gNnjiz-gIPYeUn7mRz9n_F0qVM9njQVB_9iru1n5NpZA",
+          "iv": "EqXQteE0dd8SkRbR",
+          "protected": "eyJhbGciOiJBMjU2S1ciLCJlbmMiOiJBMjU2R0NNIiwiaWF0IjoxNzY5NDY3MDcxLCJ6aXAiOiJERUYifQ",
+          "tag": "mDw7LMy4RZBLIGMdJlC2QA"
+        },
+        "description": "Keycloak Client Secret (ignition-dev)"
+      }
+    }
+  }
+}

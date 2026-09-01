@@ -1,0 +1,13 @@
+{
+  "scope": "A",
+  "description": "Tag provider created for Edge",
+  "version": 1,
+  "restricted": false,
+  "overridable": false,
+  "files": [
+    "config.json"
+  ],
+  "attributes": {
+    "uuid": "489c07ce-b492-4a51-b083-936fca0fe3b6"
+  }
+}

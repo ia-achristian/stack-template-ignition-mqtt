@@ -1,0 +1,21 @@
+{
+  "scope": "A",
+  "description": "",
+  "version": 1,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "ignition-edge-logo-light.svg"
+  ],
+  "attributes": {
+    "size": 12045,
+    "lastModificationSignature": "2d8cd1194b59ab1ec7cff3fd4ffe10bc01de9d11720f6662f2a9092b8f5e54cb",
+    "width": 1080,
+    "format": "SVG",
+    "lastModification": {
+      "actor": "admin",
+      "timestamp": "2026-02-02T15:44:14Z"
+    },
+    "height": 288
+  }
+}

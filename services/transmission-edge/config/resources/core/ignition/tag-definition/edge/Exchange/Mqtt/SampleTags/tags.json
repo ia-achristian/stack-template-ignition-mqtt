@@ -1,0 +1,15 @@
+[
+  {
+    "valueSource": "reference",
+    "historyMaxAge": 24,
+    "dataType": "String",
+    "historicalDeadband": 0.05,
+    "historyProvider": "PublicDemo",
+    "sourceTagPath": "[System]Gateway/SystemName",
+    "historyEnabled": false,
+    "name": "SystemName",
+    "formatString": "#,##0.00#",
+    "deadbandMode": "Off",
+    "tagType": "AtomicTag"
+  }
+]

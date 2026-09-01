@@ -13,5 +13,10 @@
 **/projects/conversion-report.txt
 **/.resources/
 
+# MQTT
+**/tag-*/MQTT Distributor/
+**/tag-*/MQTT Engine/
+**/tag-*/MQTT Transmission/
+
 # System Tags
 **/tag-*/System/
