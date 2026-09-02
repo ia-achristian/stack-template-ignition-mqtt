@@ -1,6 +1,6 @@
 ---
 x-ignition-common: &ignition-common
-  image: &ignition-image inductiveautomation/ignition:8.3.7
+  image: &ignition-image inductiveautomation/ignition:8.3.8
   depends_on:
     bootstrap:
       condition: service_completed_successfully
@@ -36,7 +36,7 @@ services:
       - ./services/distributor/config/resources/core:/usr/local/bin/ignition/data/config/resources/core
       - ./services/distributor/config/resources/dev:/usr/local/bin/ignition/data/config/resources/dev
       # Modules
-      - ./shared/modules/MQTT-Distributor-signed-5.0.3.modl:/usr/local/bin/ignition/user-lib/modules/MQTT-Distributor-signed.modl
+      - ./shared/modules/MQTT-Distributor-signed-5.0.4.modl:/usr/local/bin/ignition/user-lib/modules/MQTT-Distributor-signed.modl
     environment:
       <<: *ignition-environment
       GATEWAY_MODULES_ENABLED: |
@@ -67,7 +67,7 @@ services:
       - ./services/engine/config/resources/core:/usr/local/bin/ignition/data/config/resources/core
       - ./services/engine/config/resources/dev:/usr/local/bin/ignition/data/config/resources/dev
       # Modules
-      - ./shared/modules/MQTT-Engine-signed-5.0.3.modl:/usr/local/bin/ignition/user-lib/modules/MQTT-Engine-signed.modl
+      - ./shared/modules/MQTT-Engine-signed-5.0.4.modl:/usr/local/bin/ignition/user-lib/modules/MQTT-Engine-signed.modl
     environment:
       <<: *ignition-environment
       GATEWAY_MODULES_ENABLED: |
@@ -98,7 +98,7 @@ services:
       - ./services/transmission/config/resources/core:/usr/local/bin/ignition/data/config/resources/core
       - ./services/transmission/config/resources/dev:/usr/local/bin/ignition/data/config/resources/dev
       # Modules
-      - ./shared/modules/MQTT-Transmission-signed-5.0.3.modl:/usr/local/bin/ignition/user-lib/modules/MQTT-transmission-signed.modl
+      - ./shared/modules/MQTT-Transmission-signed-5.0.4.modl:/usr/local/bin/ignition/user-lib/modules/MQTT-transmission-signed.modl
     environment:
       <<: *ignition-environment
       GATEWAY_MODULES_ENABLED: |
@@ -129,7 +129,7 @@ services:
       - ./services/transmission-edge/config/resources/core:/usr/local/bin/ignition/data/config/resources/core
       - ./services/transmission-edge/config/resources/dev:/usr/local/bin/ignition/data/config/resources/dev
       # Modules
-      - ./shared/modules/MQTT-Transmission-signed-5.0.3.modl:/usr/local/bin/ignition/user-lib/modules/MQTT-transmission-signed.modl
+      - ./shared/modules/MQTT-Transmission-signed-5.0.4.modl:/usr/local/bin/ignition/user-lib/modules/MQTT-transmission-signed.modl
     environment:
       <<: *ignition-environment
       IGNITION_EDITION: edge

@@ -3,7 +3,6 @@
   "dataFormatTypeWrapper": "Sparkplug_B_v1_0_Protobuf",
   "hostnameVerification": true,
   "keepAlive": 30,
-  "mqttServerConnectionEnabled": true,
   "password": {
     "data": {
       "ciphertext": "Ix1EvOMlNZbWug",
